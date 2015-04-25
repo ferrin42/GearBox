@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>46C49FC7-05C4-4B01-B863-2688CB6F5E4D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GearBox</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>66C0195CE85CEB8D05AF0767DF5B032DC8A86CDE</key>
+		<string>https://github.com/ferrin42/GearBox.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GearBox.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>66C0195CE85CEB8D05AF0767DF5B032DC8A86CDE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ferrin42/GearBox.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>66C0195CE85CEB8D05AF0767DF5B032DC8A86CDE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>66C0195CE85CEB8D05AF0767DF5B032DC8A86CDE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GearBox</string>
+		</dict>
+	</array>
+</dict>
+</plist>
