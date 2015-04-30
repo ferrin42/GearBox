@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23408D1F1AF2B1A00095505A /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23408D1E1AF2B1A00095505A /* MyProfileViewController.m */; };
 		23A145011AE9E91100E50F34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A145001AE9E91100E50F34 /* main.m */; };
 		23A145041AE9E91100E50F34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A145031AE9E91100E50F34 /* AppDelegate.m */; };
 		23A145071AE9E91100E50F34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A145061AE9E91100E50F34 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23408D1D1AF2B1A00095505A /* MyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileViewController.h; sourceTree = "<group>"; };
+		23408D1E1AF2B1A00095505A /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
 		23A144FB1AE9E91100E50F34 /* GearBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GearBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A144FF1AE9E91100E50F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23A145001AE9E91100E50F34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				23A145031AE9E91100E50F34 /* AppDelegate.m */,
 				23A145051AE9E91100E50F34 /* ViewController.h */,
 				23A145061AE9E91100E50F34 /* ViewController.m */,
+				23408D1D1AF2B1A00095505A /* MyProfileViewController.h */,
+				23408D1E1AF2B1A00095505A /* MyProfileViewController.m */,
 				23A145081AE9E91100E50F34 /* Main.storyboard */,
 				23A1450B1AE9E91100E50F34 /* Images.xcassets */,
 				23A1450D1AE9E91100E50F34 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				23A145071AE9E91100E50F34 /* ViewController.m in Sources */,
 				23A145041AE9E91100E50F34 /* AppDelegate.m in Sources */,
+				23408D1F1AF2B1A00095505A /* MyProfileViewController.m in Sources */,
 				23A145011AE9E91100E50F34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +418,7 @@
 				23A145201AE9E91100E50F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23A145211AE9E91100E50F34 /* Build configuration list for PBXNativeTarget "GearBoxTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				23A145231AE9E91100E50F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
