@@ -9,6 +9,9 @@
 #import "MyProfileViewController.h"
 
 @interface MyProfileViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *myProfileName;
+@property (weak, nonatomic) IBOutlet UIImageView *myProfilePicture;
+@property (weak, nonatomic) IBOutlet UITableView *myProfileTableView;
 
 @end
 
