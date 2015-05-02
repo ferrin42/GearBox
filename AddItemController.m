@@ -1,21 +1,18 @@
 //
-//  MyProfileViewController.m
+//  AddItemController.m
 //  GearBox
 //
-//  Created by Jake Ferrin on 4/30/15.
+//  Created by Eric Newman on 4/30/15.
 //  Copyright (c) 2015 Jake Ferrin. All rights reserved.
 //
 
-#import "MyProfileViewController.h"
+#import "AddItemController.h"
 
-@interface MyProfileViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *myProfileName;
-@property (weak, nonatomic) IBOutlet UIImageView *myProfilePicture;
-@property (weak, nonatomic) IBOutlet UITableView *myProfileTableView;
+@interface AddItemController ()
 
 @end
 
-@implementation MyProfileViewController
+@implementation AddItemController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ezz-vJ-4Bf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ezz-vJ-4Bf">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--My Profile View Controller-->
@@ -15,13 +16,101 @@
                     <view key="view" contentMode="scaleToFill" id="hnH-eC-izT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TB3-QQ-P6t">
+                                <rect key="frame" x="16" y="268" width="568" height="275"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Morgan_Freeman" translatesAutoresizingMaskIntoConstraints="NO" id="UG6-VX-NsC">
+                                <rect key="frame" x="219" y="72" width="163" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="YDv-Mt-aEb"/>
+                                    <constraint firstAttribute="height" constant="173" id="mAx-Zv-mAY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TB3-QQ-P6t" firstAttribute="trailing" secondItem="hnH-eC-izT" secondAttribute="trailingMargin" id="CJO-km-Kj0"/>
+                            <constraint firstItem="EI4-C9-fBJ" firstAttribute="top" secondItem="TB3-QQ-P6t" secondAttribute="bottom" constant="8" symbolic="YES" id="FpK-zx-L1c"/>
+                            <constraint firstItem="UG6-VX-NsC" firstAttribute="top" secondItem="DVK-Vb-1uv" secondAttribute="bottom" constant="8" symbolic="YES" id="Shm-bh-iNW"/>
+                            <constraint firstItem="UG6-VX-NsC" firstAttribute="centerX" secondItem="TB3-QQ-P6t" secondAttribute="centerX" id="W2e-E5-RVa"/>
+                            <constraint firstItem="TB3-QQ-P6t" firstAttribute="leading" secondItem="hnH-eC-izT" secondAttribute="leadingMargin" id="d72-k7-jwP"/>
+                            <constraint firstItem="TB3-QQ-P6t" firstAttribute="top" secondItem="UG6-VX-NsC" secondAttribute="bottom" constant="23" id="fCj-dU-jaR"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cf5-Tp-b3v"/>
+                    <navigationItem key="navigationItem" id="cf5-Tp-b3v">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Morgan Freeman" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="c1X-tb-mke">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="hfv-d4-rhj">
+                            <connections>
+                                <segue destination="8wX-if-ztg" kind="show" id="3ca-pp-uYc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myProfileName" destination="c1X-tb-mke" id="4ZH-0l-mFj"/>
+                        <outlet property="myProfilePicture" destination="UG6-VX-NsC" id="1wF-X3-Olb"/>
+                        <outlet property="myProfileTableView" destination="TB3-QQ-P6t" id="Sw9-qz-0Cp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tOq-De-unG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1534" y="1037"/>
+        </scene>
+        <!--Image Picker View Controller-->
+        <scene sceneID="5OY-gP-Z9a">
+            <objects>
+                <viewController id="8wX-if-ztg" customClass="ImagePickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AVn-GS-QRV"/>
+                        <viewControllerLayoutGuide type="bottom" id="VdB-mj-VXi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4wb-PV-PYU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="AcW-G8-IVY">
+                                <rect key="frame" x="194" y="91" width="213" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="3nf-Fb-yXs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhb-ko-gRq">
+                                <rect key="frame" x="194" y="91" width="208" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="nUt-lL-Fh0"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="8wX-if-ztg" eventType="touchUpInside" id="ffl-k0-IAO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uhb-ko-gRq" firstAttribute="leading" secondItem="AcW-G8-IVY" secondAttribute="leading" id="6NB-O1-D7a"/>
+                            <constraint firstItem="AcW-G8-IVY" firstAttribute="top" secondItem="AVn-GS-QRV" secondAttribute="bottom" constant="27" id="At6-Bz-JiX"/>
+                            <constraint firstItem="uhb-ko-gRq" firstAttribute="top" secondItem="AcW-G8-IVY" secondAttribute="top" id="Fh8-bi-3cy"/>
+                            <constraint firstItem="AcW-G8-IVY" firstAttribute="centerX" secondItem="4wb-PV-PYU" secondAttribute="centerX" id="P6H-Zd-MUh"/>
+                            <constraint firstItem="VdB-mj-VXi" firstAttribute="top" secondItem="AcW-G8-IVY" secondAttribute="bottom" constant="273" id="PlD-gP-Yms"/>
+                            <constraint firstItem="uhb-ko-gRq" firstAttribute="bottom" secondItem="AcW-G8-IVY" secondAttribute="bottom" id="WP5-Yi-a30"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="AcW-G8-IVY" id="d0t-47-s9i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AQW-Ar-sZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181" y="1037"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nfU-ff-qk6">
@@ -100,4 +189,8 @@
             <point key="canvasLocation" x="722" y="1037"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Morgan_Freeman" width="2620" height="3600"/>
+        <image name="plus" width="600" height="600"/>
+    </resources>
 </document>

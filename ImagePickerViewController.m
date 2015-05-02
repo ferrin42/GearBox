@@ -1,21 +1,20 @@
 //
-//  MyProfileViewController.m
+//  ImagePickerViewController.m
 //  GearBox
 //
-//  Created by Jake Ferrin on 4/30/15.
+//  Created by Eric Newman on 5/2/15.
 //  Copyright (c) 2015 Jake Ferrin. All rights reserved.
 //
 
-#import "MyProfileViewController.h"
+#import "ImagePickerViewController.h"
 
-@interface MyProfileViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *myProfileName;
-@property (weak, nonatomic) IBOutlet UIImageView *myProfilePicture;
-@property (weak, nonatomic) IBOutlet UITableView *myProfileTableView;
+@interface ImagePickerViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
-@implementation MyProfileViewController
+@implementation ImagePickerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,6 +24,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)buttonPressed:(id)sender {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+    
 }
 
 /*

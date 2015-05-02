@@ -15,6 +15,7 @@
 		23A1450C1AE9E91100E50F34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A1450B1AE9E91100E50F34 /* Images.xcassets */; };
 		23A1450F1AE9E91100E50F34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A1450D1AE9E91100E50F34 /* LaunchScreen.xib */; };
 		23A1451B1AE9E91100E50F34 /* GearBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A1451A1AE9E91100E50F34 /* GearBoxTests.m */; };
+		9B0C08731AF552350015775A /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0C08721AF552350015775A /* ImagePickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		23A145141AE9E91100E50F34 /* GearBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GearBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A145191AE9E91100E50F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23A1451A1AE9E91100E50F34 /* GearBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GearBoxTests.m; sourceTree = "<group>"; };
+		9B0C08711AF552350015775A /* ImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImagePickerViewController.h; path = ../ImagePickerViewController.h; sourceTree = "<group>"; };
+		9B0C08721AF552350015775A /* ImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImagePickerViewController.m; path = ../ImagePickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				23A145061AE9E91100E50F34 /* ViewController.m */,
 				23408D1D1AF2B1A00095505A /* MyProfileViewController.h */,
 				23408D1E1AF2B1A00095505A /* MyProfileViewController.m */,
+				9B0C08711AF552350015775A /* ImagePickerViewController.h */,
+				9B0C08721AF552350015775A /* ImagePickerViewController.m */,
 				23A145081AE9E91100E50F34 /* Main.storyboard */,
 				23A1450B1AE9E91100E50F34 /* Images.xcassets */,
 				23A1450D1AE9E91100E50F34 /* LaunchScreen.xib */,
@@ -173,6 +178,7 @@
 				TargetAttributes = {
 					23A144FA1AE9E91100E50F34 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 67T6UH8E7E;
 					};
 					23A145131AE9E91100E50F34 = {
 						CreatedOnToolsVersion = 6.2;
@@ -227,6 +233,7 @@
 				23A145071AE9E91100E50F34 /* ViewController.m in Sources */,
 				23A145041AE9E91100E50F34 /* AppDelegate.m in Sources */,
 				23408D1F1AF2B1A00095505A /* MyProfileViewController.m in Sources */,
+				9B0C08731AF552350015775A /* ImagePickerViewController.m in Sources */,
 				23A145011AE9E91100E50F34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,9 +356,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GearBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -359,9 +369,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GearBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
